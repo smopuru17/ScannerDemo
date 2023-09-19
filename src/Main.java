@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main
@@ -25,23 +26,19 @@ public class Main
 
         fullName = firstName + " " + lastName;
 
-        System.out.println("Enter a number [1- 10]: ");
-
-
+        System.out.print("Enter a number [1- 10]: ");
         if (in.hasNextInt());
         {
             // Clear the newline /Enter from the buffer
+
             favNum = in.nextInt();
             System.out.println("You said your num is: " + favNum);
-
         }
-        else // Don't have a number must read buffer as a Trash String
+        else
         {
             trash = in.nextLine();
-            System.out.println("You told me " + trash);
-            System.out.println("Run the program again and do the input correctly");
+            System.out.println("You entered " + trash);
+            System.out.println("Please redo the program and input properly. ");
         }
-
-
     }
 }
