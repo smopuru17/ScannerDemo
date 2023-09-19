@@ -34,11 +34,6 @@ public class Main
             favNum = in.nextInt();
             System.out.println("You said your num is: " + favNum);
         }
-        else
-        {
-            trash = in.nextLine();
-            System.out.println("You entered " + trash);
-            System.out.println("Please redo the program and input properly. ");
-        }
+
     }
 }
